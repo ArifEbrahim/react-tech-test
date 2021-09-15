@@ -5,17 +5,12 @@ import './Navbar.css'
 export default function Navbar() {
   return (
     <nav>
-      <ul className='nav-list'>
-        <li className='nav-item'>
-          <Link to="/contact-us">Contact Us</Link>
-        </li>
-        <li className='nav-item'>
-          <Link to="/about-us">About Us</Link>
-        </li>
-        <li className='nav-item'>
-          <Link to="/">Home</Link>
-        </li>
-      </ul>
+      <div className='nav-list'>
+        <Link to="/">Home</Link>
+        <Link to="/about-us">About Us</Link>
+        <Link to="/contact-us">Contact Us</Link>
+        <button className='login-btn'><strong>Log in</strong></button>
+      </div>
     </nav>
   )
 }
