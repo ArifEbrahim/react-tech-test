@@ -10,6 +10,9 @@ a {
 nav {
   border-bottom: 1px solid lightgray;
   padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-list {
@@ -19,11 +22,17 @@ nav {
 }
 
 .login-btn {
-  margin: 0px 80px 0px 20px;
+  margin: 0px 100px 0px 20px;
   border: none;
   padding: 15px 30px;
   border-radius: 5px;
   background-color: #EFF7FF;
   color: #2F7BB8;
   font-size: 8.5pt;
+}
+
+.logo{
+  width: 180px;
+  height: 40px;
+  margin-left: 100px;
 }
