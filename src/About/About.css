@@ -1,0 +1,39 @@
+img{
+  height: 400px;
+  width: 600px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  color: #484848;
+  font-size: 8.5pt;
+  margin: 20px 0px 20px 0px;
+  line-height: 1.8;
+  font-family: ;
+}
+
+.container {
+  margin: 50px 100px 50px 100px;
+}
+
+li {
+  line-height: 1.8;
+  font-size: 8.5pt;
+  color: #484848;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  font-size: 14pt;
+}
+

@@ -2,16 +2,21 @@ import React from 'react'
 import { topLine, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, paragraphFive } from './sampleText'
 import OfficeImage from '../assets/shutterstock_696636415.jpg'
 import BulletSection from './BulletSection'
+import './About.css'
 
 export default function About() {
 
   return (
-    <div>
-      <h3>About Us</h3>
-      {topLine}
-      <p>{paragraphOne}</p>
+    <div className = 'container'>
+      <div className='page-title'>About Us</div>
+      <p>
+        <strong>{topLine}</strong><br/>
+        {paragraphOne}
+      </p>
       <p>{paragraphTwo}</p>
-      <img src={OfficeImage} alt='office'/>
+      <div className = 'image-container'>
+        <img src={OfficeImage} alt='office'/>
+      </div>
       <p>{paragraphThree}</p>
       <BulletSection />
       <p>{paragraphFour}</p>
