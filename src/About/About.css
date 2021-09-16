@@ -1,4 +1,4 @@
-img{
+.about-img{
   height: 400px;
   width: 600px;
 }
@@ -34,7 +34,7 @@ ul {
   padding-left: 0;
 }
 
-.page-title {
+.section-title {
   margin: 50px 0 20px 0;
   font-size: 14pt;
   color: #8b8b8b;

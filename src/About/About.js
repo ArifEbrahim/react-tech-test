@@ -8,14 +8,14 @@ export default function About() {
 
   return (
     <div className = 'container'>
-      <div className='page-title'>About Us</div>
+      <div className='section-title'>About Us</div>
       <p>
         <strong>{topLine}</strong><br/>
         {paragraphOne}
       </p>
       <p>{paragraphTwo}</p>
       <div className = 'image-container'>
-        <img src={OfficeImage} alt='office'/>
+        <img className='about-img' src={OfficeImage} alt='office'/>
       </div>
       <p>{paragraphThree}</p>
       <BulletSection />
