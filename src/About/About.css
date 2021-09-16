@@ -23,7 +23,7 @@ p {
 }
 
 li {
-  line-height: 1.8;
+  line-height: 2;
   font-size: 8.5pt;
   color: #8b8b8b;
   font-weight: bold;
@@ -36,9 +36,9 @@ ul {
 
 .section-title {
   margin: 50px 0 20px 0;
-  font-size: 14pt;
+  font-size: 15pt;
   color: #8b8b8b;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .bullet-title {

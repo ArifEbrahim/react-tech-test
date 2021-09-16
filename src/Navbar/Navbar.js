@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import './Navbar.css'
 import Logo from '../assets/Logo.svg'
+import LoginBtn from './LoginBtn';
 
 export default function Navbar() {
   return (
@@ -15,7 +16,7 @@ export default function Navbar() {
             <Link to="/">Home</Link>
             <Link to="/about-us">About Us</Link>
             <Link to="/contact-us">Contact Us</Link>
-            <button className='login-btn'>Log in</button>
+            <LoginBtn />
           </div>
         </nav>
       </div>

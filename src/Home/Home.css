@@ -35,19 +35,18 @@
 }
 
 .section1-box1 .box1-title {
-  color: white;
   font-size: 24pt;
   margin: 0;
 }
 
 .section1-box1 p {
-  color: white;
   font-size: 12pt;
 }
 
 .homepage-section2 {
   display: flex;
-  height: 420px;
+  justify-content: space-between;
+  height: 430px;
 }
 
 .section2-left-box {
@@ -58,4 +57,36 @@
   width: 510px;
   height: 310px;
   margin-top: 50px;
+}
+
+.homepage-section3 {
+  width: 100%;
+  height: 430px;
+  background-image: url(../assets/shutterstock_1302552622.jpg);
+  background-size: 130%;
+  background-position: left 50% top 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.light {
+  color: white;
+}
+
+.section3-box1 {
+  width: 35%;
+  height: 70%;
+  padding: 0 30px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid black;
+  background-color: #635C58;
+}
+
+.section3-box1 .section-title{
+  margin: 0 !important;
 }

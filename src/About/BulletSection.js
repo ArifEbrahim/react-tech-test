@@ -3,8 +3,6 @@ import React from 'react'
 export default function BulletSection() {
   return (
     <div>
-      <div class='bullet-title'>Taria duo ut vis semper abhorreant:
-      </div>
       <ul>
           <li>Te pri efficiendi assueverit, id molestie suavitate per</li>
           <li>Te nam dolorem rationibus repudiandae, ne ius falli aliquip consetetur</li>

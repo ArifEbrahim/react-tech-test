@@ -18,6 +18,8 @@ export default function About() {
         <img className='about-img' src={OfficeImage} alt='office'/>
       </div>
       <p>{paragraphThree}</p>
+      <div class='bullet-title'>Taria duo ut vis semper abhorreant:
+      </div>
       <BulletSection />
       <p>{paragraphFour}</p>
       <p>{paragraphFive}</p>
