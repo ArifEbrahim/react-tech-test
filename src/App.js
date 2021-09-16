@@ -5,6 +5,7 @@ import About from './About/About'
 import Contact from './Contact/Contact'
 import Home from './Home/Home'
 import Navbar from './Navbar/Navbar'
+import Footer from './Footer/Footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
     </Router>
   );
 }

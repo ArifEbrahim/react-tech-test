@@ -21,7 +21,9 @@ export default function About() {
       </div>
       <BulletSection />
       <p>{paragraphFour}</p>
+      <div className='spacer'>
       <p>{paragraphFive}</p>
+      </div>
     </div>
   )
 }

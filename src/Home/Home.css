@@ -100,7 +100,7 @@
 }
 
 .homepage-section4 {
-  height: 500px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -118,7 +118,7 @@
 .column-container {
   columns: 3;
   column-gap: 30px;
-  height: 55%;
+  height: 60%;
 }
 
 .column-container p {

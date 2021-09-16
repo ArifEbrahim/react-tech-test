@@ -1,0 +1,12 @@
+.footer-contents {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  color: lightgray;
+  border-top: 1px solid lightgray;
+}
+
+.footer-contents p {
+  color: #C7C7CA;
+}
