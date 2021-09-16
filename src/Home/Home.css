@@ -83,10 +83,48 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  border: 1px solid black;
   background-color: #635C58;
 }
 
 .section3-box1 .section-title{
-  margin: 0 !important;
+  margin: 0;
+}
+
+.section4-subtitle {
+  color: #323232;
+  margin-bottom: 20px;;
+}
+
+.section4-top-text .section-title {
+  margin: 10px;
+}
+
+.homepage-section4 {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.section4-top-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-container {
+  columns: 3;
+  column-gap: 30px;
+  height: 55%;
+}
+
+.column-container p {
+  margin: 0 0 20px 0;
+}
+
+.homepage-section4 .blue-btn {
+  margin: 20px;
 }
