@@ -30,7 +30,7 @@
 }
 
 label {
-  font-size: 12px;
+  font-size: 11px;
   margin-bottom: 5px;
   color: gray
 }
@@ -41,3 +41,19 @@ input {
   background-color: #F8F9FC;
   border-radius: 5px;
 }
+
+.phone-no {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.phone-no span {
+  color: #C7C7CA;
+  font-style: italic;
+}
+
+#phone02 {
+  display: none;
+}
+

@@ -5,7 +5,7 @@ export default function Button(props) {
   const buttonStyle = `btn ${props.size} ${props.colour}`
 
   return (
-    <button className={buttonStyle}>
+    <button className={buttonStyle} type='button'>
       {props.text}
     </button>
   )

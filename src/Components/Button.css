@@ -5,6 +5,11 @@
   border-radius: 4px;
 }
 
+.xl {
+  height: 40px;
+  width: 100%;
+}
+
 .lrg {
   padding: 10px 25px;
   width: 120px;

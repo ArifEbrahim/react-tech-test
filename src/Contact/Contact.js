@@ -1,7 +1,17 @@
 import React from 'react'
 import './Contact.css'
+import Button from '../Components/Button'
 
 export default function Contact() {
+
+  const showPhone02 = () => {
+    let numberEl = document.querySelector('#phone02')
+    numberEl.style.display = 'flex'
+  }
+
+  
+
+
   return (
     <div className='contact-us-container'>
       <div className='background-img'>
@@ -19,7 +29,17 @@ export default function Contact() {
                 <input type='email'></input>
               </div>
             </div>
-            
+            <div className='phone-no' id='phone01'>
+              <label>Phone number 01<span>-optional</span></label>
+              <input type='text'></input>
+            </div>
+            <div className='phone-no' id='phone02'>
+              <label>Phone number 02<span>-optional</span></label>
+              <input type='text'></input>
+            </div>
+            <div className='new-number-btn' onClick={showPhone02}>
+              <Button size={'xl'} colour={'light'} text={'Add new phone number'} />
+            </div>
           </form>
         </div>
       </div>
