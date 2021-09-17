@@ -14,7 +14,6 @@
 
 .form-container {
   margin-left: 100px;
-  border: 1px solid black;
   width: 40%;
 }
 
@@ -57,3 +56,23 @@ input {
   display: none;
 }
 
+.message-title-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 5px 0;;
+}
+
+.message-title-box span {
+  color: #C7C7CA;
+  font-size: 11px;
+}
+
+textarea {
+  width: 99%;
+  height: 130px;
+  resize: none;
+  border: 1px solid lightgray;
+  background-color: #F8F9FC;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

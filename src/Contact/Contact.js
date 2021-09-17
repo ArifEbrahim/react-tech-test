@@ -9,9 +9,6 @@ export default function Contact() {
     numberEl.style.display = 'flex'
   }
 
-  
-
-
   return (
     <div className='contact-us-container'>
       <div className='background-img'>
@@ -40,6 +37,12 @@ export default function Contact() {
             <div className='new-number-btn' onClick={showPhone02}>
               <Button size={'xl'} colour={'light'} text={'Add new phone number'} />
             </div>
+            <div className='message-title-box'>
+              <label>Message</label>
+              <span>Maximum text length is 500 characters</span>
+            </div>
+            <textarea></textarea>
+            <Button size={'xl'} colour={'blue'} text={'Submit'} />
           </form>
         </div>
       </div>
