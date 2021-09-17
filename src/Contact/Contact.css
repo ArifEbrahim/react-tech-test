@@ -1,0 +1,43 @@
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.background-img {
+  background-image: url('../assets/Img_Contact.png');
+  background-size: 40%;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 56vh;
+}
+
+.form-container {
+  margin-left: 100px;
+  border: 1px solid black;
+  width: 40%;
+}
+
+.name-email-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-email {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+label {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: gray
+}
+
+input {
+  height: 35px;
+  border: 1px solid lightgray;
+  background-color: #F8F9FC;
+  border-radius: 5px;
+}
