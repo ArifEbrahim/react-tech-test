@@ -1,4 +1,5 @@
 import React from 'react'
+import './BulletSection.css'
 
 export default function BulletSection() {
   return (

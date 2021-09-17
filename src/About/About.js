@@ -1,7 +1,7 @@
 import React from 'react'
-import { topLine, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, paragraphFive } from './sampleText'
+import { aboutTopLine, aboutP1, aboutP2, aboutP3, aboutBulletTitle, aboutP4, aboutP5 } from './aboutText'
 import OfficeImage from '../assets/shutterstock_696636415.jpg'
-import BulletSection from './BulletSection'
+import BulletSection from '../Components/BulletSection'
 import './About.css'
 
 export default function About() {
@@ -9,20 +9,19 @@ export default function About() {
     <div className = 'container'>
       <div className='section-title'>About Us</div>
       <p>
-        <strong>{topLine}</strong><br/>
-        {paragraphOne}
+        <span className='top-line'>{aboutTopLine}</span><br/>
+        {aboutP1}
       </p>
-      <p>{paragraphTwo}</p>
+      <p>{aboutP2}</p>
       <div className = 'image-container'>
         <img className='about-img' src={OfficeImage} alt='office'/>
       </div>
-      <p>{paragraphThree}</p>
-      <div class='bullet-title'>Taria duo ut vis semper abhorreant:
-      </div>
+      <p>{aboutP3}</p>
+      <div class='bullet-title'>{aboutBulletTitle}</div>
       <BulletSection />
-      <p>{paragraphFour}</p>
+      <p>{aboutP4}</p>
       <div className='spacer'>
-      <p>{paragraphFive}</p>
+      <p>{aboutP5}</p>
       </div>
     </div>
   )

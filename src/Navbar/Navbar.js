@@ -16,7 +16,7 @@ export default function Navbar() {
             <Link to="/">Home</Link>
             <Link to="/about-us">About Us</Link>
             <Link to="/contact-us">Contact Us</Link>
-            <Button size={'sml'} colour={'white'} text={'Log in'} />
+            <Button size={'sml'} colour={'light'} text={'Log in'} />
           </div>
         </nav>
       </div>
