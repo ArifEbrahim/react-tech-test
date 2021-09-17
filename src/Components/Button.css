@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  font-weight: bold;
+  font-size: 9pt;
+  border-radius: 4px;
+}
+
+.lrg {
+  padding: 10px 25px;
+  width: 120px;
+  height: 40px;
+}
+
+.sml {
+  padding: 15px 30px;
+}
+
+.blue {
+  background-color: #2F7BB8;
+  color: white;
+}
+
+.white {
+  background-color: #EFF7FF;
+  color: #2F7BB8;
+}

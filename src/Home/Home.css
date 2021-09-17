@@ -119,12 +119,10 @@
   columns: 3;
   column-gap: 30px;
   height: 60%;
+  margin-bottom: 20px;
 }
 
 .column-container p {
   margin: 0 0 20px 0;
 }
 
-.homepage-section4 .blue-btn {
-  margin: 20px;
-}
