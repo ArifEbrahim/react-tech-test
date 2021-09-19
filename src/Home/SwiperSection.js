@@ -8,11 +8,11 @@ import Button from '../Components/Button'
 SwiperCore.use([Pagination, Navigation])
 
 export default function SwiperSection() {
-  const api_url = 'https://interview-assessment.api.avamae.co.uk/api/v1/home/banner-details'
+  const apiURL = 'https://interview-assessment.api.avamae.co.uk/api/v1/home/banner-details'
   const [slideData, setSlideData] = useState([])
 
   useEffect(() => {
-    axios.get(api_url, {'accept': 'application/json'})
+    axios.get(apiURL, {'accept': 'application/json'})
     .then(res => setSlideData(res.data.Details)) 
   }, [])
 

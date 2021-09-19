@@ -76,3 +76,7 @@ textarea {
   border-radius: 5px;
   margin-bottom: 10px;
 }
+
+.form-container button {
+  cursor: pointer;
+}
