@@ -1,19 +1,16 @@
 import React from 'react'
 import './Home.css'
 import BulletSection from '../Components/BulletSection'
-import { homeSecOneTitle, homeSecOneSubtitle, homeSecTwoTitle, homeSecTwoText, homeSecThreeTitle, homeSecThreeText, homeSecFourTitle, homeSecFourSubtitle, homeSecFourP1, homeSecFourP2, homeSecFourP3 } from './homeText'
+import { homeSecTwoTitle, homeSecTwoText, homeSecThreeTitle, homeSecThreeText, homeSecFourTitle, homeSecFourSubtitle, homeSecFourP1, homeSecFourP2, homeSecFourP3 } from './homeText'
 import OfficeImage from '../assets/shutterstock_696636415.jpg'
 import Button from '../Components/Button'
+import SwiperSection from './SwiperSection'
 
 export default function Home() {
   return (
     <div className='homepage-container'>
       <div className='homepage-section1'>
-        <div className='section1-box1'>
-          <div className='box1-title white'>{homeSecOneTitle}</div>
-          <p className='white'>{homeSecOneSubtitle}</p>
-          <Button size={'lrg'} colour={'blue'} text={'Contact Us'} />
-        </div>
+        <SwiperSection />
       </div>
       <div className='homepage-section2 container'>
         <div className='section2-left-box'>

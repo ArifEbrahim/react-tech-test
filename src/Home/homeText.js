@@ -1,7 +1,3 @@
-const homeSecOneTitle = 'Lorem ipsum dolor'
-
-const homeSecOneSubtitle = 'Quem vide tincidunt pri ei, id mea omnium denique.'
-
 const homeSecTwoTitle = 'Justo petentium te vix, scripta regione urbanitas'
 
 const homeSecTwoText = 'Suspendisse vel nisi id odio consequat aliquam quis ac nisl. Vestibulum orci enim, porta viverra egestas laoreet, sollicitudin et orci. Ut id lacinia tortor. Sed et sollicitudin diam, sed facilisis eros. Donec sit amet consequat neque. Donec tristique tincidunt mi sed tincidunt. Suspendisse quis augue eget quam ullamcorper ultricies sed non justo.'
@@ -20,4 +16,4 @@ const homeSecFourP2 = 'Cras sit amet dapibus magna, Orci varius natoque penatibu
 
 const homeSecFourP3 = 'Sed libero justo, lobortis sit amet suscipit nan, auctor non libero. Maecenas quis nisl eget enim porta blandit a nec sapien. Mauris porttitor lorem ut egestas euismccl Donec molestie tempor nibh, nec uenenatis arcu ullamccrper sit amet Nulla facilisL Proin cursus neque ut tortor scelerisque, at iaculis nunc ornare. Pellentesque non nunc nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus, Aenean et scdales diatn Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor magna augue, non auctor quam placerat nec. Nulla sem urna, dictum sed nisi in, viverra rutrum negue. Aliquam ipsum nunc, porta a augue nec, fringilla mollis arcu. In a vehicula odio. Praesent uulputate turpis eleifend egestas ultrices. Sed sed sapien pretium, maximus felis vel, maximus felis vel, mollis elit. Proin nec sagittis nibh. Curabitur fringilla felis a porttitor maxims Vestibulum aliquet ante nec leo malesuada porttitor sit amet et magna.'
 
-export { homeSecOneTitle, homeSecOneSubtitle, homeSecTwoTitle, homeSecTwoText, homeSecThreeTitle, homeSecThreeText, homeSecFourTitle, homeSecFourSubtitle, homeSecFourP1, homeSecFourP2, homeSecFourP3 }
+export { homeSecTwoTitle, homeSecTwoText, homeSecThreeTitle, homeSecThreeText, homeSecFourTitle, homeSecFourSubtitle, homeSecFourP1, homeSecFourP2, homeSecFourP3 }
