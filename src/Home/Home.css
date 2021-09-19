@@ -30,8 +30,7 @@
   justify-content: center;
   padding-left: 100px;
   margin-top: -1200px;
-  background: rgb(60,60,60);
-  background: linear-gradient(90deg, rgba(60,60,60,1) 0%, rgba(38,38,38,0.7) 20%, rgba(38,38,38,0) 100%);
+  background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(38,38,38,0.7) 25%, rgba(38,38,38,0) 100%);
 }
 
 .section1-box1 .box1-title {
