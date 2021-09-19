@@ -5,12 +5,17 @@ import { homeSecTwoTitle, homeSecTwoText, homeSecThreeTitle, homeSecThreeText, h
 import OfficeImage from '../assets/shutterstock_696636415.jpg'
 import Button from '../Components/Button'
 import SwiperSection from './SwiperSection'
+import { useHistory } from "react-router-dom";
 
 export default function Home() {
+  const history = useHistory();
+
+  const handleClick = () => history.push('/contact-us')
+
   return (
     <div className='homepage-container'>
       <div className='homepage-section1'>
-        <SwiperSection />
+        <SwiperSection onClick={handleClick}/>
       </div>
       <div className='homepage-section2 container'>
         <div className='section2-left-box'>
@@ -39,7 +44,7 @@ export default function Home() {
             <p>{homeSecFourP2}</p>
             <p>{homeSecFourP3}</p>
         </div>
-        <Button size={'lrg'} colour={'blue'} text={'Contact Us'} />
+        <Button size={'lrg'} colour={'blue'} text={'Contact Us'} onClick={handleClick}/>
       </div>
     </div>
   )

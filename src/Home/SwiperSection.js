@@ -7,7 +7,7 @@ import Button from '../Components/Button'
 
 SwiperCore.use([Pagination, Navigation])
 
-export default function SwiperSection() {
+export default function SwiperSection(props) {
   const apiURL = 'https://interview-assessment.api.avamae.co.uk/api/v1/home/banner-details'
   const [slideData, setSlideData] = useState([])
 
@@ -26,7 +26,7 @@ export default function SwiperSection() {
             <div className='section1-box1'>
               <div className='box1-title white'>{`${mySlide.Title}`}</div>
               <p className='white'>{`${mySlide.Subtitle}`}</p>
-              <Button size={'lrg'} colour={'blue'} text={'Contact Us'} />
+              <Button size={'lrg'} colour={'blue'} text={'Contact Us'} onClick={props.onClick}/>
             </div>
           </SwiperSlide>
         )
