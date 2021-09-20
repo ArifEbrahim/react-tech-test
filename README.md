@@ -17,7 +17,7 @@ Maximum progress was made in the time given however not all features could be im
 #### Home page
 
 1. The default Swiper pagination & navigation buttons were used and do not match the inVision design.
-2. The development was completed on my desktop computer using an external monitor. When I tested the app on my laptop I noticed some of the images were not being resized properly, namely the carousel images on the 'Home' page and the background image on the 'Contact Us' page.
+2. The development was completed on my desktop computer using an external monitor. When I tested the app on my laptop & phone I noticed some of the images were not being resized properly, namely the carousel images on the 'Home' page and the background image on the 'Contact Us' page. I have included screenshots of the app in the 'images' folder as evidence that I was successfully able to get the design working on my machine.
 3. Whilst the font 'Roboto' was selected in the style sheet it does not appear to be implemented correctly. Therefore there is a difference in the font when compared to the inVision design.
 
 #### About Us
