@@ -33,12 +33,13 @@ export default function Contact() {
       "Message": message,
       "bIncludeAddressDetails": false
     };
+
     const headers = {
       'accept': 'application/json'
     };
+    
     axios.post(apiURL, formContents, headers)
     .then(res => {
-      console.log(res)
       if (res.status === 200) {
         displaySuccess();
       }
