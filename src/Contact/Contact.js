@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './Contact.css'
 import Button from '../Components/Button'
+import SuccessMessage from './SuccessMessage'
 import axios from 'axios'
 
 export default function Contact() {
@@ -34,9 +35,11 @@ export default function Contact() {
     .then(res => {
       console.log(res)
       if (res.status === 200) {
-        console.log('ok')
         displaySuccess()
       }
+    })
+    .catch(error => {
+      console.log(error.response.data)
     })
   }
 
@@ -58,22 +61,16 @@ export default function Contact() {
         <div className='form-container'>
           <div className='section-title'>Contact us</div>
           <p>Populo facilisi nam no, dolor deleniti deseruisse ne cum, nam quodsi aliquam eligendi ne. Ferri euismod accusata te nec, summo accumsan at vix.</p>
-          <div className='success-message'>
-            <div className='tick-background'>
-              <div className='tick-icon'></div>
-            </div>
-            <div className='section-title'>Your message has been sent</div>
-            <p>We will be in contract with you within 24 hours</p>
-          </div>
+          <SuccessMessage />
           <form id='form'>
             <div className='name-email-box'>
               <div className='name-email'>
                 <label>Full name</label>
-                <input type='text' required value={fullName} onChange={(e) => {setFullName(e.target.value)}}></input>
+                <input type='text' value={fullName} onChange={(e) => {setFullName(e.target.value)}}></input>
               </div>
               <div className='name-email'>
                 <label>Email address</label>
-                <input type='email' required value={email} onChange={(e) => {setEmail(e.target.value)}}></input>
+                <input type='email' value={email} onChange={(e) => {setEmail(e.target.value)}}></input>
               </div>
             </div>
             <div className='phone-no' id='phone01'>
@@ -89,7 +86,7 @@ export default function Contact() {
               <label>Message</label>
               <span>Maximum text length is 500 characters</span>
             </div>
-            <textarea required value={message} onChange={(e) => {setMessage(e.target.value)}}></textarea>
+            <textarea value={message} onChange={(e) => {setMessage(e.target.value)}}></textarea>
             <Button size={'xl'} colour={'blue'} text={'Submit'} onClick={handleSubmit}/>
           </form>
         </div>
