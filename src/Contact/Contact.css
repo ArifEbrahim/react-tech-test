@@ -15,6 +15,7 @@
 .form-container {
   margin-left: 100px;
   width: 40%;
+
 }
 
 .name-email-box {
@@ -36,7 +37,7 @@ label {
 
 input {
   height: 35px;
-  border: 1px solid lightgray;
+  border: 1px solid rgb(230, 230, 230);
   background-color: #F8F9FC;
   border-radius: 5px;
 }
@@ -71,7 +72,7 @@ textarea {
   width: 99%;
   height: 130px;
   resize: none;
-  border: 1px solid lightgray;
+  border: 1px solid rgb(230, 230, 230);
   background-color: #F8F9FC;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -79,4 +80,46 @@ textarea {
 
 .form-container button {
   cursor: pointer;
+}
+
+.success-message{
+  width: 100%;
+  height: 150px;
+  background-color: #E9F4DA;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  z-index: -100;
+}
+
+.success-message .section-title {
+  font-size: 12pt;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.success-message p {
+  margin: 2px;
+}
+
+.tick-icon {
+  background-image: url('../assets/Icon_Valid.svg');
+  z-index: 1;
+  color: white;
+  width: 24px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+
+.tick-background {
+  width: 40px;
+  height: 40px;
+  background-color: #8EC73D;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }

@@ -12,7 +12,10 @@ export default function SwiperSection(props) {
   const [slideData, setSlideData] = useState([])
 
   useEffect(() => {
-    axios.get(apiURL, {'accept': 'application/json'})
+    const headers = {
+      'accept': 'application/json'
+    }
+    axios.get(apiURL, headers)
     .then(res => setSlideData(res.data.Details)) 
   }, [])
 

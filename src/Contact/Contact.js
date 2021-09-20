@@ -26,14 +26,30 @@ export default function Contact() {
       "Message": message,
       "bIncludeAddressDetails": false
     }
+    const headers = {
+      'accept': 'application/json'
+    }
     // console.log(formContents)
-    axios.post(apiURL, formContents, {'accept': 'application/json'})
-    .then(res => console.log(res))
+    axios.post(apiURL, formContents, headers)
+    .then(res => {
+      console.log(res)
+      if (res.status === 200) {
+        console.log('ok')
+        displaySuccess()
+      }
+    })
   }
 
   const addPhoneNumbers = () => {
     if(phone01) { phoneNumbers.push(phone01) }
     if(phone02) { phoneNumbers.push(phone02) }
+  }
+
+  const displaySuccess = () => {
+    let formEl = document.querySelector('#form')
+    formEl.style.display = 'none'
+    let successMsgEl = document.querySelector('.success-message')
+    successMsgEl.style.display = 'flex'
   }
 
   return (
@@ -42,6 +58,13 @@ export default function Contact() {
         <div className='form-container'>
           <div className='section-title'>Contact us</div>
           <p>Populo facilisi nam no, dolor deleniti deseruisse ne cum, nam quodsi aliquam eligendi ne. Ferri euismod accusata te nec, summo accumsan at vix.</p>
+          <div className='success-message'>
+            <div className='tick-background'>
+              <div className='tick-icon'></div>
+            </div>
+            <div className='section-title'>Your message has been sent</div>
+            <p>We will be in contract with you within 24 hours</p>
+          </div>
           <form id='form'>
             <div className='name-email-box'>
               <div className='name-email'>
