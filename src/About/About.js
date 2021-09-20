@@ -1,8 +1,8 @@
-import React from 'react'
-import { aboutTopLine, aboutP1, aboutP2, aboutP3, aboutBulletTitle, aboutP4, aboutP5 } from './aboutText'
-import OfficeImage from '../assets/shutterstock_696636415.jpg'
-import BulletSection from '../Components/BulletSection'
-import './About.css'
+import React from 'react';
+import { aboutTopLine, aboutP1, aboutP2, aboutP3, aboutBulletTitle, aboutP4, aboutP5 } from './aboutText';
+import OfficeImage from '../assets/shutterstock_696636415.jpg';
+import BulletSection from '../Components/BulletSection';
+import './About.css';
 
 export default function About() {
   return (

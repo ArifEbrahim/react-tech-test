@@ -1,16 +1,15 @@
-import React from 'react'
-import './Home.css'
-import BulletSection from '../Components/BulletSection'
-import { homeSecTwoTitle, homeSecTwoText, homeSecThreeTitle, homeSecThreeText, homeSecFourTitle, homeSecFourSubtitle, homeSecFourP1, homeSecFourP2, homeSecFourP3 } from './homeText'
-import OfficeImage from '../assets/shutterstock_696636415.jpg'
-import Button from '../Components/Button'
-import SwiperSection from './SwiperSection'
+import React from 'react';
+import './Home.css';
+import BulletSection from '../Components/BulletSection';
+import { homeSecTwoTitle, homeSecTwoText, homeSecThreeTitle, homeSecThreeText, homeSecFourTitle, homeSecFourSubtitle, homeSecFourP1, homeSecFourP2, homeSecFourP3 } from './homeText';
+import OfficeImage from '../assets/shutterstock_696636415.jpg';
+import Button from '../Components/Button';
+import SwiperSection from './SwiperSection';
 import { useHistory } from "react-router-dom";
 
 export default function Home() {
   const history = useHistory();
-
-  const handleClick = () => history.push('/contact-us')
+  const handleClick = () => history.push('/contact-us');
 
   return (
     <div className='homepage-container'>

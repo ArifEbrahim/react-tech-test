@@ -1,89 +1,95 @@
-import React, {useState} from 'react'
-import './Contact.css'
-import Button from '../Components/Button'
-import SuccessMessage from './SuccessMessage'
-import axios from 'axios'
+import React, {useState} from 'react';
+import './Contact.css';
+import Button from '../Components/Button';
+import SuccessMessage from './SuccessMessage';
+import axios from 'axios';
 
 export default function Contact() {
-  const [fullName, setFullName] = useState("")
-  const [email, setEmail] = useState("")
-  const [phone01, setPhone01] = useState("")
-  const [phone02, setPhone02] = useState("")
-  const [message, setMessage] = useState("")
-  const [nameError, setNameError] = useState("")
-  const [emailError, setEmailError] = useState("")
-  const [phone01Error, setPhone01Error] = useState("")
-  const [phone02Error, setPhone02Error] = useState("")
-  const [messageError, setMessageError] = useState("")
-
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone01, setPhone01] = useState("");
+  const [phone02, setPhone02] = useState("");
+  const [message, setMessage] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [phone01Error, setPhone01Error] = useState("");
+  const [phone02Error, setPhone02Error] = useState("");
+  const [messageError, setMessageError] = useState("");
 
   let phoneNumbers = [];
-  const apiURL='https://interview-assessment.api.avamae.co.uk/api/v1/contact-us/submit'
+  const apiURL='https://interview-assessment.api.avamae.co.uk/api/v1/contact-us/submit';
 
   const showPhone02 = () => {
-    let numberEl = document.querySelector('#phone02')
-    numberEl.style.display = 'flex'
+    let numberEl = document.querySelector('#phone02');
+    numberEl.style.display = 'flex';
   }
 
   const handleSubmit = () => {
-    addPhoneNumbers()
+    addPhoneNumbers();
     const formContents = {
       "FullName": fullName,
       "EmailAddress": email,
       "PhoneNumbers": phoneNumbers,
       "Message": message,
       "bIncludeAddressDetails": false
-    }
+    };
     const headers = {
       'accept': 'application/json'
-    }
-    // console.log(formContents)
+    };
     axios.post(apiURL, formContents, headers)
     .then(res => {
       console.log(res)
       if (res.status === 200) {
-        displaySuccess()
+        displaySuccess();
       }
     })
     .catch(error => {
-      console.log(error.response.data.Errors)
-      handleErrors(error.response.data.Errors)
+      handleErrors(error.response.data.Errors);
     })
   }
 
   const addPhoneNumbers = () => {
-    if(phone01) { phoneNumbers.push(phone01) }
-    if(phone02) { phoneNumbers.push(phone02) }
+    if(phone01) { phoneNumbers.push(phone01) };
+    if(phone02) { phoneNumbers.push(phone02) };
   }
 
   const displaySuccess = () => {
-    let formEl = document.querySelector('#form')
-    formEl.style.display = 'none'
-    let successMsgEl = document.querySelector('.success-message')
-    successMsgEl.style.display = 'flex'
+    let formEl = document.querySelector('#form');
+    formEl.style.display = 'none';
+    let successMsgEl = document.querySelector('.success-message');
+    successMsgEl.style.display = 'flex';
   }
 
   const handleErrors =(errors) => {
+    clearErrors();
     errors.forEach(error => {
       switch(error.FieldName) {
         case 'FullName':
-          setNameError(error.MessageCode)
+          setNameError(error.MessageCode);
           break;
         case 'EmailAddress':
-          setEmailError(error.MessageCode)
+          setEmailError(error.MessageCode);
           break;
         case 'PhoneNumbers[0]':
-          setPhone01Error(error.MessageCode.replaceAll('_', ' '))
+          setPhone01Error(error.MessageCode.replaceAll('_', ' '));
           break;
         case 'PhoneNumbers[1]':
-          setPhone02Error(error.MessageCode.replaceAll('_', ' '))
+          setPhone02Error(error.MessageCode.replaceAll('_', ' '));
           break;
         case 'Message':
-          setMessageError(error.MessageCode)
+          setMessageError(error.MessageCode);
           break;
         default:
       }
     })
+  }
+
+  const clearErrors = () => {
+    setNameError("");
+    setEmailError("");
+    setPhone01Error("");
+    setPhone02Error("");
+    setMessageError("");
   }
 
   return (

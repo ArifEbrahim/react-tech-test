@@ -1,5 +1,5 @@
-import React from 'react'
-import './BulletSection.css'
+import React from 'react';
+import './BulletSection.css';
 
 export default function BulletSection() {
   return (

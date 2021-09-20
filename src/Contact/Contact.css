@@ -1,3 +1,25 @@
+label {
+  font-size: 11px;
+  margin-bottom: 5px;
+  color: gray
+}
+
+input {
+  height: 35px;
+  border: 1px solid rgb(230, 230, 230);
+  background-color: #F8F9FC;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 99%;
+  height: 130px;
+  resize: none;
+  border: 1px solid rgb(230, 230, 230);
+  background-color: #F8F9FC;
+  border-radius: 5px;
+}
+
 .contact-us-container {
   display: flex;
   flex-direction: column;
@@ -29,19 +51,6 @@
   width: 48%;
 }
 
-label {
-  font-size: 11px;
-  margin-bottom: 5px;
-  color: gray
-}
-
-input {
-  height: 35px;
-  border: 1px solid rgb(230, 230, 230);
-  background-color: #F8F9FC;
-  border-radius: 5px;
-}
-
 .phone-no {
   display: flex;
   flex-direction: column;
@@ -66,15 +75,6 @@ input {
 .message-title-box span {
   color: #C7C7CA;
   font-size: 11px;
-}
-
-textarea {
-  width: 99%;
-  height: 130px;
-  resize: none;
-  border: 1px solid rgb(230, 230, 230);
-  background-color: #F8F9FC;
-  border-radius: 5px;
 }
 
 .form-container button {

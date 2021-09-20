@@ -1,5 +1,5 @@
-import React from 'react'
-import './SuccessMessage.css'
+import React from 'react';
+import './SuccessMessage.css';
 
 export default function SuccessMessage() {
   return (

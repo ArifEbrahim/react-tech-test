@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Pagination, Navigation } from 'swiper'
-import 'swiper/swiper-bundle.css'
-import Button from '../Components/Button'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Pagination, Navigation } from 'swiper';
+import 'swiper/swiper-bundle.css';
+import Button from '../Components/Button';
 
-SwiperCore.use([Pagination, Navigation])
+SwiperCore.use([Pagination, Navigation]);
 
 export default function SwiperSection(props) {
-  const apiURL = 'https://interview-assessment.api.avamae.co.uk/api/v1/home/banner-details'
-  const [slideData, setSlideData] = useState([])
+  const apiURL = 'https://interview-assessment.api.avamae.co.uk/api/v1/home/banner-details';
+  const [slideData, setSlideData] = useState([]);
 
   useEffect(() => {
     const headers = {
       'accept': 'application/json'
-    }
+    };
     axios.get(apiURL, headers)
     .then(res => setSlideData(res.data.Details)) 
-  }, [])
+  }, []);
 
   return (
     <>
