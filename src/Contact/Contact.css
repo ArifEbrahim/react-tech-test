@@ -75,10 +75,17 @@ textarea {
   border: 1px solid rgb(230, 230, 230);
   background-color: #F8F9FC;
   border-radius: 5px;
-  margin-bottom: 10px;
 }
 
 .form-container button {
   cursor: pointer;
 }
 
+.error-msg {
+  color: red;
+  font-size: 9pt;
+}
+
+.submit-box {
+  margin-top: 15px;
+}
