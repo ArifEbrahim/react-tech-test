@@ -27,17 +27,16 @@ textarea {
 
 .background-img {
   background-image: url('../assets/Img_Contact.png');
-  background-size: 40%;
+  background-size: 35%;
   background-position: 90% 50%;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 56vh;
 }
 
 .form-container {
   margin-left: 100px;
   width: 40%;
-
+  min-height: 45vh;
 }
 
 .name-email-box {
