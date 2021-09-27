@@ -2,6 +2,8 @@
 
 An example tech test of building a multi-page website in React.
 
+I have deployed the website [here](https://react-tech-test.netlify.app/)
+
 Requirements:
 
 Home page
